@@ -37,7 +37,7 @@ python app.py
 
 ## Git 版本控管
 
-本專案目前保留四個有效提交，涵蓋文件架構、Echo Bot、PDF 成果與本次排版及註解美化。推送到 GitHub 前，確認 `.env` 沒有被加入版本庫：
+本專案目前保留七個有效提交，涵蓋文件架構、Echo Bot、PDF 成果、個人資料、排版美化、程式碼註解與封面編譯修正。推送到 GitHub 前，確認 `.env` 沒有被加入版本庫：
 
 ```powershell
 git status
