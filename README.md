@@ -37,7 +37,7 @@ python app.py
 
 ## Git 版本控管
 
-本專案已保留至少三個有效提交，並以新提交記錄本次個人資料更新。推送到 GitHub 前，確認 `.env` 沒有被加入版本庫：
+本專案目前保留四個有效提交，涵蓋文件架構、Echo Bot、PDF 成果與本次排版及註解美化。推送到 GitHub 前，確認 `.env` 沒有被加入版本庫：
 
 ```powershell
 git status
@@ -47,7 +47,7 @@ git branch -M main
 git push -u origin main
 ```
 
-目前版本的 Git 歷程可使用以下指令清楚查看：
+目前版本的 Git 歷程可使用以下指令清楚查看，最近一筆應是排版與程式碼註解更新：
 
 ```powershell
 git log --oneline --decorate --graph -4

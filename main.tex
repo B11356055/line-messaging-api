@@ -4,6 +4,7 @@
 \usepackage{xeCJK}
 \setmainfont{Times New Roman}
 \setCJKmainfont{MingLiU}
+\setCJKmonofont{MingLiU}
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{xcolor}
@@ -36,20 +37,26 @@
 }
 \lstset{style=pythonstyle}
 \usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=linegreen!45!black,urlcolor=blue!65!black,citecolor=ink}
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{LINE Messaging API 教學文件}
-\rhead{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\titleformat{\chapter}[display]{\bfseries\Huge\color{ink}}{第 \thechapter 章}{8pt}{\Huge}
+\lhead{\small\color{linegreen!55!black}LINE Messaging API 教學文件}
+\rhead{\small\color{ink}期中專題}
+\cfoot{\color{linegreen!55!black}\rule{0.18\linewidth}{0.5pt}\quad\thepage\quad\rule{0.18\linewidth}{0.5pt}}
+\renewcommand{\headrulewidth}{0.7pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{linegreen!45!black}\leaders\hrule height \headrulewidth\hfill}}
+\titleformat{\chapter}[display]{\bfseries\Huge\color{ink}}{\color{linegreen}\titlerule[1.2pt]\vspace{1ex}\Large 第 \thechapter 章}{8pt}{\Huge}
 \titleformat{\section}{\Large\bfseries\color{linegreen!45!black}}{\thesection}{0.7em}{}
 \titleformat{\subsection}{\large\bfseries\color{ink}}{\thesubsection}{0.7em}{}
 \setlist[itemize]{itemsep=3pt,topsep=4pt}
 \setlist[enumerate]{itemsep=4pt,topsep=4pt}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\renewcommand{\arraystretch}{1.25}
 \newcommand{\field}[1]{\rule{0.58\linewidth}{0.4pt}\quad #1}
 
 \begin{document}
@@ -57,15 +64,19 @@
   \centering
   \vspace*{1.4cm}
   {\color{linegreen}\rule{0.8\linewidth}{3pt}}\\[1.2cm]
+  {\color{linegreen!55!black}\Large TECHNICAL DOCUMENTATION}\par
+  \vspace{0.35cm}
   {\Huge\bfseries LINE Messaging API\\[0.35cm]註冊、設定與 Echo Bot 實作}\par
   \vspace{1.1cm}
   {\Large 專業排版與設計 期中考題}\par
   \vfill
+  \fcolorbox{linegreen!55!black}{linegreen!6}{%
   \begin{tabular}{p{3cm}p{8cm}}
-    座號： & 67\\[0.45cm]
-    班級： & 資管三C\\[0.45cm]
-    學號： & 414637297\\[0.45cm]
-    姓名： & 廖翊宸
+    \textbf{座號：} & 67\\[0.45cm]
+    \textbf{班級：} & 資管三C\\[0.45cm]
+    \textbf{學號：} & 414637297\\[0.45cm]
+    \textbf{姓名：} & 廖翊宸
+  \end{tabular}}
   \end{tabular}
   \vfill
   {\large 編製日期：2026 年 11 月 13 日}\par
